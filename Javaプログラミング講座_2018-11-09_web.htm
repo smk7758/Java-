@@ -1,0 +1,983 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=shift_jis">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:Wingdings;
+	panose-1:5 0 0 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"ＭＳ 明朝";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+@font-face
+	{font-family:Century;
+	panose-1:2 4 6 4 5 5 5 2 3 4;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:游明朝;
+	panose-1:2 2 4 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"游ゴシック Medium";
+	panose-1:2 11 5 0 0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@游ゴシック Medium";}
+@font-face
+	{font-family:"\@游明朝";}
+@font-face
+	{font-family:"\@ＭＳ 明朝";
+	panose-1:2 2 6 9 4 2 5 8 3 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin:0mm;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Century",serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:#954F72;
+	text-decoration:underline;}
+p.MsoListParagraph, li.MsoListParagraph, div.MsoListParagraph
+	{margin-top:0mm;
+	margin-right:0mm;
+	margin-bottom:0mm;
+	margin-left:42.0pt;
+	margin-bottom:.0001pt;
+	text-align:justify;
+	text-justify:inter-ideograph;
+	font-size:10.5pt;
+	font-family:"Century",serif;}
+span.1
+	{mso-style-name:未解決のメンション1;
+	color:#605E5C;
+	background:#E1DFDD;}
+.MsoChpDefault
+	{font-family:"Century",serif;}
+ /* Page Definitions */
+ @page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:36.0pt 36.0pt 36.0pt 36.0pt;
+	layout-grid:18.0pt;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ ol
+	{margin-bottom:0mm;}
+ul
+	{margin-bottom:0mm;}
+-->
+</style>
+
+</head>
+
+<body lang=JA link="#0563C1" vlink="#954F72" style='text-justify-trim:punctuation'>
+
+<div class=WordSection1 style='layout-grid:18.0pt'>
+
+<p class=MsoNormal align=center style='text-align:center'><span lang=EN-US
+style='font-size:32.0pt;font-family:"游ゴシック Medium"'>Java</span><span
+style='font-size:32.0pt;font-family:"游ゴシック Medium"'>プログラミング講座</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;font-family:"游明朝",serif'>java</span><span
+style='font-size:16.0pt;font-family:"游明朝",serif'>ファイルの書式</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・パッケージ宣言<span
+lang=EN-US>: package </span>フォルダ<span lang=EN-US>.</span>フォルダ…<span lang=EN-US>;</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・インポート宣言<span
+lang=EN-US>: import </span>フォルダ<span lang=EN-US>.</span>フォルダ…<span lang=EN-US>;</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・クラス<span lang=EN-US>(</span>またはインターフェース<span
+lang=EN-US>, </span>列挙型<span lang=EN-US>)</span>の定義</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>パッケージ<span lang=EN-US>:
+</span>プログラムを分類して管理するための仕組み。</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:42.0pt'><span
+lang=EN-US style='font-family:"游明朝",serif'>(</span><span style='font-family:
+"游明朝",serif'>実質的にはフォルダ<span lang=EN-US>(</span>ファイルシステム<span lang=EN-US>)</span>として管理<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>パッケージ宣言<span
+lang=EN-US>: </span>定義したクラスが、どのパッケージに属するものなのかを宣言する。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>インポート宣言<span
+lang=EN-US>: </span>異なるパッケージに属するクラスを使用したい場合に指定する。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>Main</span><span
+style='font-family:"游明朝",serif'>クラスの定義<span lang=EN-US>:</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+width=353 height=132 src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image001.png"
+alt="public class クラス名 {&#13;&#10;	public static void main(String[] args) {&#13;&#10;		// 処理&#13;&#10;	}&#13;&#10;}&#13;&#10;"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>基本的にこれをいじっていく。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:16.0pt;font-family:"游明朝",serif'>式<span
+lang=EN-US>(</span>文<span lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・定義文<span
+lang=EN-US>(</span>宣言<span lang=EN-US>, </span>初期化<span lang=EN-US>[</span>定義式<span
+lang=EN-US>+</span>代入式としても<span lang=EN-US>])</span></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'><img width=249 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image002.png" alt="修飾子 型 変数名;"></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・代入式</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'><img width=249 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image003.png"
+alt="変数名 = インスタンス/値;"></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・初期化式</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'><img width=301 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image004.png"
+alt="修飾子 型 変数名 = インスタンス/値;"></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・処理式<span
+lang=EN-US>(</span>命令<span lang=EN-US>, </span>実行<span lang=EN-US>, </span>演算<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'><img width=249 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image005.png"
+alt="(クラス.)関数(メソッド)名;"></span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt'><span style='font-family:"游明朝",serif'>・ブロック文<span
+lang=EN-US>(</span>複文<span lang=EN-US>): </span>複数の処理が一つの文として書ける。</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt'><span style='font-family:"游明朝",serif'>※変数の名前空間に注意<span
+lang=EN-US>: </span>ブロックの外からはその変数を参照、利用できない。<span lang=EN-US>(</span>未定義と同じになる<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'><img width=249 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image006.png" alt="{ //処理 }"></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・条件式<span
+lang=EN-US>[boolean](</span>論理<span lang=EN-US>, </span>判定<span lang=EN-US>, </span>評価<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'><img width=249 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image007.png" alt=boolean型を返すメンバ></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・<span
+lang=EN-US>if-else</span>文</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'><img width=249 height=108
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image008.png"
+alt="if (条件式) { //処理 }&#13;&#10;else if (条件式) { //処理 }&#13;&#10;…&#13;&#10;else { //処理 }&#13;&#10;"></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・<span
+lang=EN-US>switch</span>文</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'><img width=296 height=180
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image009.png"
+alt="switch (変数*) {&#13;&#10;	case 値:&#13;&#10;	//処理&#13;&#10;	break;&#13;&#10;	…&#13;&#10;	default: //処理&#13;&#10;}&#13;&#10;"></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'>*: </span><span style='font-family:"游明朝",serif'>整数型<span
+lang=EN-US>, </span>列挙型<span lang=EN-US>, </span>文字列型</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・<span
+lang=EN-US>while</span>文</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'><img width=249 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image010.png"
+alt="while (条件式) { //処理 }"></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・<span
+lang=EN-US>do-while</span>文</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'><img width=249 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image011.png"
+alt="do { //処理 } while (条件式);"></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・<span
+lang=EN-US>for</span>文</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'><img width=301 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image012.png"
+alt="for (定義式; 条件式; 代入式) { //処理 }"></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・<span
+lang=EN-US>for-each</span>文</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'><img width=367 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image013.png"
+alt="for (型 変数名 : 変数*) { //処理 }"></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'>*: Iterable</span><span style='font-family:
+"游明朝",serif'>を実装している型の変数</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・<span
+lang=EN-US>try-catch</span>文<span lang=EN-US>: </span>例外処理用</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・<span
+lang=EN-US>try-catch-resouce</span>文<span lang=EN-US>: I/O</span>用</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>== </span><span
+style='font-family:"游明朝",serif'>インスタンス <span lang=EN-US>==</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>インスタンス<span
+lang=EN-US>: </span>クラスがメモリ上に展開されたもの。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>インスタンス化<span
+lang=EN-US>(</span>クラス生成<span lang=EN-US>, </span>初期化<span lang=EN-US>):</span>インスタンスを生成すること。下記の文でできる。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+width=249 height=36 src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image014.png"
+alt="型 変数 = new クラス名(引数);"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>また、インスタンス生成とクラス定義を組み合わせた無名クラス<span
+lang=EN-US>(</span>下記<span lang=EN-US>)</span>という構文もある。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&lt;</span><span
+style='font-family:"游明朝",serif'>加えて覚えること<span lang=EN-US>&gt;</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>null: </span><span
+style='font-family:"游明朝",serif'>インスタンスがないことを表す値。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>static: </span><span
+style='font-family:"游明朝",serif'>別記する。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>== </span><span
+style='font-family:"游明朝",serif'>コンストラクター <span lang=EN-US>==</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>クラスのインスタンス化が行われる際に呼ばれ、その際に必要な処理を記述するメソッド。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+width=353 height=132 src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image015.png"
+alt="修飾子 class クラス名 {&#13;&#10;	修飾子 クラス名(引数) {&#13;&#10;		// 処理&#13;&#10;	}&#13;&#10;}&#13;&#10;"></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>== </span><span
+style='font-family:"游明朝",serif'>修飾子 <span lang=EN-US>==</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>public: </span><span
+style='font-family:"游明朝",serif'>全てのクラスから見える</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>private: </span><span
+style='font-family:"游明朝",serif'>同一クラスの中からしか見えない<span lang=EN-US>(</span>他のクラスから見られない<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>protected: </span><span
+style='font-family:"游明朝",serif'>同一クラス、およびその継承関係にあるクラス<span lang=EN-US>(</span>子クラス<span
+lang=EN-US>)</span>からしか見えない</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>→ 基本的には<span
+lang=EN-US>private</span>と言われているが、プロジェクト規模にもよるので一概には言えない。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>詳細<span lang=EN-US>: http://java-code.jp/134</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:18.0pt;font-family:"游明朝",serif'>Collection</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>Collection:
+</span><span style='font-family:"游明朝",serif'>要素のオブジェクトを管理<span lang=EN-US>(</span>格納、取得<span
+lang=EN-US>)</span>することを可能にする<span lang=EN-US>API</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・<span lang=EN-US>List(</span>リスト<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>配列のように格納される要素が順番を持つ。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>順番に並んでいるため、リストの要素は<span lang=EN-US>index(</span>インデックス<span
+lang=EN-US>)</span>で参照したり、</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>追加したりすることができる。</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>配列<span
+lang=EN-US>(Array)</span>との違い<span lang=EN-US>:</span></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>要素数が確定していなくてもできる。<span lang=EN-US>(</span>配列は<span
+lang=EN-US>List</span>のほぼ下位互換<span lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・インデックスで管理</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・要素は重複が可能</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・<span lang=EN-US>Set(</span>セット<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>格納される要素に順番も重複もない。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・要素は順不同</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・要素は重複不可</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・<span lang=EN-US>Map(</span>マップ<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・<span lang=EN-US>Key(</span>キー<span
+lang=EN-US>)</span>と<span lang=EN-US>Value(</span>値<span lang=EN-US>)</span>のペアで管理</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・<span lang=EN-US>Key</span>は重複不可</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・<span lang=EN-US>Queue(</span>キュー<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・待ち行列として管理</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・先頭または末尾の要素のみ追加、削除可能</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>Iterator(</span><span
+style='font-family:"游明朝",serif'>イテレーター<span lang=EN-US>, </span>反復子<span
+lang=EN-US>):</span></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・<span
+lang=EN-US>Collection</span>の要素を<span lang=EN-US>1</span>個ずつ処理するためのクラス</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・<span lang=EN-US>Iterable</span>インターフェースを実装していなければならない</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・拡張<span lang=EN-US>for</span>文はこれがあると使える</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>Generics(</span><span
+style='font-family:"游明朝",serif'>ジェネリクス<span lang=EN-US>):</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・汎用的な型を使うための機能</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・クラス名<span
+lang=EN-US>&lt;</span>任意の型<span lang=EN-US>&gt; </span>←これのこと <span lang=EN-US>(</span>型とクラスはたぶんほぼ同じ<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>Stream(</span><span
+style='font-family:"游明朝",serif'>ストリーム<span lang=EN-US>): (</span>下記する<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・配列と<span
+lang=EN-US>Collection</span>を元にして、それらのオブジェクトを集合体として扱えるようにした<span lang=EN-US>API</span></span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・選ばれた配列や<span
+lang=EN-US>Collection</span>の要素自体に変更を加えたり、出力したりできます。</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>・ラムダ式<span
+lang=EN-US>(</span>関数型インターフェース<span lang=EN-US>)</span>を使って、楽に配列と<span
+lang=EN-US>Collection</span>を操作できる。<span lang=EN-US>(</span>下記する<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>従来はただの<span
+lang=EN-US>for</span>文<span lang=EN-US>, Iterator</span>を用いて行っていたが、これを用いると簡潔に記述できるようになる。<span
+lang=EN-US>(ex: forEach)</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>Stream</span><span
+style='font-family:"游明朝",serif'>は次の<span lang=EN-US>3</span>つの処理の種別に分かれる。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・生成処理<span lang=EN-US>:
+</span>配列や<span lang=EN-US>Collection</span>のオブジェクトを元に<span lang=EN-US>Stream</span>オブジェクトを生成する。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・中間処理<span lang=EN-US>:
+Stream</span>オブジェクトに含まれる要素を選別、加工して、新たな<span lang=EN-US>Stream</span>を作る。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>なお、この処理はメソッドチェーン<span lang=EN-US>(</span>メソッドを続けて記述<span
+lang=EN-US>)</span>することができ、視覚的にもわかりやすい。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・終端処理<span lang=EN-US>:
+</span>最終結果を取得します。要素数の取得、<span lang=EN-US>forEach</span>メソッドの実行がこれに該当します。</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span style='font-family:"游明朝",serif'>なお、終端処理を実行するとその<span
+lang=EN-US>Stream</span>と元になった<span lang=EN-US>Stream</span>は<span lang=EN-US>close</span>され、</span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt'><span style='font-family:"游明朝",serif'>それ以降の中間処理、終端処理が行えなくなります。<span
+lang=EN-US>(</span>実行すると例外が発生する<span lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>この<span lang=EN-US>3</span>つの処理を組み合わせて目的の処理を行います。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>さらに、この処理の中ではラムダ式を用いることができ、今までより格段に書きやすくなっています。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>== </span><span
+style='font-family:"游明朝",serif'>拡張<span lang=EN-US>for</span>構文 <span
+lang=EN-US>==</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+width=249 height=84 src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image016.png"
+alt="for (型※1 変数※2 : 変数※3) {&#13;&#10;//処理&#13;&#10;}&#13;&#10;"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※<span lang=EN-US>1: </span>変数<sup>※<span
+lang=EN-US>3</span></sup>の内部の型</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※<span lang=EN-US>2: </span>変数<sup>※<span
+lang=EN-US>3</span></sup>の内容が順次入る</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※<span lang=EN-US>3:
+Iteratable</span>を実装したクラス<span lang=EN-US>(Collection</span>関係のクラス<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>== </span><span
+style='font-family:"游明朝",serif'>ラムダ式<span lang=EN-US> / forEach</span>メソッド <span
+lang=EN-US>==</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>Java8</span><span
+style='font-family:"游明朝",serif'>で追加された関数型を受けて追加されたもので、便利。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+width=249 height=84 src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image017.png"
+alt="変数※1.forEach((型 変数) -&gt; {&#13;&#10;	任意の関数(変数);&#13;&#10;})&#13;&#10;"></span></p>
+
+<p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"游明朝",serif'>①<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"游明朝",serif'>変数の型の省略</span></p>
+
+<p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"游明朝",serif'>②<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"游明朝",serif'>変数部分の<span lang=EN-US>()</span>の省略<span
+lang=EN-US> (</span>※変数が一個の時<span lang=EN-US>)</span></span></p>
+
+<p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"游明朝",serif'>③<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"游明朝",serif'>複文<span lang=EN-US>(</span>ブロック文<span
+lang=EN-US>)</span>表記の省略 <span lang=EN-US>(</span>※処理が一行の時<span lang=EN-US>)</span></span></p>
+
+<p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"游明朝",serif'>④<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"游明朝",serif'>メソッド参照 <span lang=EN-US>(</span>※変数と、任意の関数の引数が対応している時<span
+lang=EN-US>?)</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>詳細<span lang=EN-US>: Java</span>ラムダ式メモ<span
+lang=EN-US>(Hishidama's Java8 Lambda Expression Memo) &#8211; </span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+class=MsoHyperlink><a
+href="http://www.ne.jp/asahi/hishidama/home/tech/java/lambda.html">http://www.ne.jp/asahi/hishidama/home/tech/java/lambda.html</a></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>== </span><span
+style='font-family:"游明朝",serif'>無名クラス<span lang=EN-US>(</span>匿名クラス<span
+lang=EN-US>) ==</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=399 height=83
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image018.png"
+alt="new スーパークラス/インターフェース() {&#13;&#10;// 継承したメソッドなど&#13;&#10;}&#13;&#10;"></span></p>
+
+<p class=MsoNormal><u><span style='font-family:"游明朝",serif'>クラス名のないクラス</span></u><span
+style='font-family:"游明朝",serif'>を定義できる。これを使うことで新たなクラスを宣言することなく、</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>メソッド内でクラスの定義や、インターフェースの実装ができる。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>なお、特定のスーパークラスを指定しない場合には、<span
+lang=EN-US>Object</span>クラスを指定する。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>(Object</span><span
+style='font-family:"游明朝",serif'>クラスは全てのクラスのスーパークラスに当たるため<span lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>== </span><span
+style='font-family:"游明朝",serif'>ラムダ式による無名クラスの置き換え <span lang=EN-US>==</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=364 height=84
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image019.png"
+alt="() -&gt; {&#13;&#10;	// ※(参照)&#13;&#10;}&#13;&#10;"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※<span lang=EN-US>: </span>抽象メソッドが<span
+lang=EN-US>1</span>つだけ定義されているインターフェース<span lang=EN-US>(</span>関数型インターフェース<span
+lang=EN-US>)</span>のメソッドを</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>実装することができ、従来の無名クラスをつかっていた処理がシンプルに記述できるようになる。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>== static(</span><span
+style='font-family:"游明朝",serif'>静的<span lang=EN-US>) ==</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>static: </span><span
+style='font-family:"游明朝",serif'>インスタンス生成しなくても、そのメソッドや変数にアクセスできるようになる。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>しかし、全てのインスタンスに影響を及ぼす。たとえば、あるクラスに定義されている</span></p>
+
+<p class=MsoNormal style='text-indent:42.0pt'><span lang=EN-US
+style='font-family:"游明朝",serif'>static</span><span style='font-family:"游明朝",serif'>フィールド<span
+lang=EN-US>(</span>変数<span lang=EN-US>)</span>と非<span lang=EN-US>static</span>なフィールド<span
+lang=EN-US>(</span>変数<span lang=EN-US>)</span>の違いは、次のようになる。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=364 height=396
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image020.png"
+alt="class A {&#13;&#10;	public static String name = “A”;&#13;&#10;	public String cat = “C”;&#13;&#10;	public void test() {&#13;&#10;		A.name; // printlnとかで出力する&#13;&#10;		cat; //printlnとかで出力する&#13;&#10;	}&#13;&#10;}&#13;&#10;class Main {&#13;&#10;	public static void main() {&#13;&#10;		A.name; //printlnとかで出力する&#13;&#10;		A a = new A();&#13;&#10;		a.cat; // printlnとかで出力する&#13;&#10;		a.test();&#13;&#10;}&#13;&#10;}&#13;&#10;"></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>詳細<span lang=EN-US>: <span
+class=MsoHyperlink><a href="https://java-reference.com/java_basic_static.html">https://java-reference.com/java_basic_static.html</a></span></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>また次のようなものも併せて紹介する。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=387 height=180
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image021.png"
+alt="class Main {&#13;&#10;	static String text;&#13;&#10;	static {&#13;&#10;		text = LocalDateTime.now().toString();&#13;&#10;		System.out,println(text);&#13;&#10;	}&#13;&#10;}&#13;&#10;"></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>Map</span><span
+style='font-family:"游明朝",serif'>の初期化<span lang=EN-US>: <span
+class=MsoHyperlink><a
+href="http://daichan4649.hatenablog.jp/entry/20090611/1244650579">http://daichan4649.hatenablog.jp/entry/20090611/1244650579</a></span></span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>なんかおもしろいの<span
+lang=EN-US>: </span></span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt'><span class=MsoHyperlink><span
+lang=EN-US style='font-family:"游明朝",serif'><a
+href="http://d.hatena.ne.jp/satosystems/20120905/1346805620">http://d.hatena.ne.jp/satosystems/20120905/1346805620</a></span></span><span
+lang=EN-US style='font-family:"游明朝",serif'>, <span class=MsoHyperlink><a
+href="https://ts0818.hatenablog.com/entry/2018/06/02/194653">https://ts0818.hatenablog.com/entry/2018/06/02/194653</a></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-size:16.0pt;font-family:"游明朝",serif'>File
+I/O</span><span style='font-size:16.0pt;font-family:"游明朝",serif'>関係</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>ファイルに書き込みたい！ファイルを読みたい！とかいうことをする。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・<span lang=EN-US>FileIO</span>ってなんだよ？</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>FileSystem</span><span
+style='font-family:"游明朝",serif'>の<span lang=EN-US>I (Input / </span>入力<span
+lang=EN-US>) </span>と <span lang=EN-US>O (Output / </span>出力<span lang=EN-US>) </span>を行えるよ！</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・<span lang=EN-US>FileSystem</span>ってなんやねん！！</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>FileSystem</span><span
+style='font-family:"游明朝",serif'>っていうのは、<span lang=EN-US>OS</span>においてデータを保管するファイル<span
+lang=EN-US>(File)</span>とそれをまとめ上げて管理するディレクトリー<span lang=EN-US>(Directory/Folder)</span>で作られる世界のこと。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・<span lang=EN-US>FileIO</span>で何ができるん？</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>ファイルとディレクトリーに対して、<span
+lang=EN-US>delete, create, exist,…,write, read</span>などいろいろ、</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>私達が<span lang=EN-US>OS</span>で行うこと<span
+lang=EN-US>(</span>たぶん<span lang=EN-US>)</span>すべてができる！</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・じゃぁ<span lang=EN-US>Java</span>でそれを行うにはどうすればいいの？</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>→<span lang=EN-US>NewIO</span>というライブラリがおすすめですよ！</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>旧来は<span lang=EN-US>File(java.io</span>系<span
+lang=EN-US>)</span>というクラスを中心として構成されていたが、現在では様々な利点から、</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>New
+I/O(java.nio</span><span style='font-family:"游明朝",serif'>系<span lang=EN-US>)</span>というパッケージを用いて行うのがこれからの主流となっていきます。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&lt;New I/O&gt;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>NewIO</span><span
+style='font-family:"游明朝",serif'>では一般的に次の<span lang=EN-US>2</span>つのクラスを基底として使います。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=471 height=84
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image022.png"
+alt="Path: Stringを変換してファイルのパスを表すようにしたクラス&#13;&#10;Paths: Pathを作るためのクラス&#13;&#10;Files: 実際にファイル操作をするクラス&#13;&#10;"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※<span lang=EN-US>File</span>クラスは<span
+lang=EN-US>NewIO</span>ではなく、古のもの<span lang=EN-US>(?)</span>のため注意すべし。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・<span lang=EN-US>Path</span>の取得<span
+lang=EN-US>(</span>例<span lang=EN-US>) </span>… ファイルの場所！</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=471 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image023.png"
+alt="Path path = Paths.get(“C:\\”, “a”);"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※<span lang=EN-US>Path</span>は<span
+lang=EN-US>new</span>では作れません！</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※<span lang=EN-US>Paths</span>の<span
+lang=EN-US>get</span>メソッドは<span lang=EN-US>static</span>メソッドです！</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※<span lang=EN-US>get</span>メソッドの引数は、可変長引数で、引数ごとで、ファイルの階層を表すことができます。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※パス<span lang=EN-US>(</span>普通に文字列<span
+lang=EN-US>)</span>の取得は、ファイルを選択して、<span lang=EN-US>Shift+</span>右クリックで「パスのコピー」を行うと楽。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※パスは、エスケープシークエンスとダブルクオーテーションに気をつける。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・<span lang=EN-US>Files</span>の利用の例
+… ファイル<span lang=EN-US>/</span>ディレクトリーに対する操作を行う。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=471 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image024.png"
+alt="Files.exsit(path);"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※戻り値は<span lang=EN-US>boolean</span>なのでこれを<span
+lang=EN-US>if</span>文で使うことができる！</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>●ファイルへの読み書き</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>基本的に次の<span
+lang=EN-US>2</span>つのクラスを使うと良い。<span lang=EN-US>(</span>ほかのクラスは基本的に古のものが多いが、他人のプログラムでは古でも使われることが多いので注意？してください<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=535 height=60
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image025.png"
+alt="BufferedWriter: バッファを用いて効率的に、ファイルに書き込みを行うクラス&#13;&#10;BufferedReader: バッファを用いて効率的に、ファイルに読み込みを行うクラス&#13;&#10;"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・<span lang=EN-US>Buffer(</span>バッファ<span
+lang=EN-US>)</span>って？</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>メモリ空間上に一時的に置かれたデータのこと。<span
+lang=EN-US>tmp/temp(</span>テンプ<span lang=EN-US>)</span>ともいいます。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>●<span lang=EN-US>BufferedWriter/BufferedReader</span>の<span
+lang=EN-US>(</span>インスタンスの<span lang=EN-US>)</span>生成</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&lt;</span><span
+style='font-family:"游明朝",serif'>古の方法<span lang=EN-US>/</span>自分もよくわからん<span
+lang=EN-US>&gt;</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>たぶん、<span lang=EN-US>(NewIO</span>では<span
+lang=EN-US>)</span>あんまり使わないです。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=471 height=60
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image026.png"
+alt="BufferedWriter bw = new BufferedWriter(Writer);&#13;&#10;BufferedReader br = new BufferedReader(Reader);&#13;&#10;"></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&lt;NewIO</span><span
+style='font-family:"游明朝",serif'>を用いた、<span lang=EN-US>BufferedWriter/BufferedReader</span>の生成<span
+lang=EN-US>&gt;</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=471 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image027.png"
+alt="BufferedWriter bw = Files.newBufferedWriter(path);"></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&lt;BufferedWriter/BufferedReader</span><span
+style='font-family:"游明朝",serif'>の利用<span lang=EN-US>&gt;</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=471 height=60
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image028.png"
+alt="bw.write(String);&#13;&#10;String line = br.readLine();&#13;&#10;"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※<span lang=EN-US>bw,
+br</span>はそれぞれ<span lang=EN-US>close()</span>メソッドを呼び出さないと行けない。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>(bw</span><span
+style='font-family:"游明朝",serif'>で<span lang=EN-US>close()</span>を呼び出さないと出力されない<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><u><span style='font-family:"游明朝",serif'>よって以下のようにする必要がある。</span></u></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=471 height=180
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image029.png"
+alt="try {&#13;&#10;	BufferedWriter bw = Files.newBufferedWriter(path);&#13;&#10;bw.write(“A”);&#13;&#10;bw.close();&#13;&#10;} catch (IOException ex) {&#13;&#10;	ex.printStackTrace();&#13;&#10;}&#13;&#10;"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>クソ長い</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>↓</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&lt;BufferedWriter/BufferedReader</span><span
+style='font-family:"游明朝",serif'>の利用<span lang=EN-US>(</span>改良<span lang=EN-US>)
+</span>～ <span lang=EN-US>try-catch-resouce</span>！<span lang=EN-US>&gt;</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=471 height=84
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image030.png"
+alt="try (BufferedWriter bw = Files.newBufferedWriter(path)) {&#13;&#10;bw.write(“A”);&#13;&#10;}&#13;&#10;"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>神</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&lt;write()</span><span
+style='font-family:"游明朝",serif'>の注意？<span lang=EN-US>&gt;</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>br.write(text)</span><span
+style='font-family:"游明朝",serif'>を呼び出しただけでは、改行されず、</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=471 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image031.png" alt=AAAAAAA></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>みたいなことになってしまう。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>改行するには、行と捉える文字列の最後に改行文字をつければ良い。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=471 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image032.png"
+alt="bw.write(text + System.lineSeparator());"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>※<span lang=EN-US>System.lineSeparator();</span>は<span
+lang=EN-US>OS</span>毎に正しい改行文字を返してくれるメソッド。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>CRLF(\r\n),
+LF(\n)</span><span style='font-family:"游明朝",serif'>とかの差異に気をつけなくていい！</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&lt;</span><span
+style='font-family:"游明朝",serif'>課題<span lang=EN-US>&gt;</span></span></p>
+
+<p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"游明朝",serif'>1.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"游明朝",serif'>ファイルに文字列を書き込む</span></p>
+
+<p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"游明朝",serif'>2.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"游明朝",serif'>「<span lang=EN-US>1.</span>」の複数行<span
+lang=EN-US>version (List</span>を用いて<span lang=EN-US>)</span></span></p>
+
+<p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"游明朝",serif'>3.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"游明朝",serif'>ファイルの読み込み</span></p>
+
+<p class=MsoListParagraph style='margin-left:18.0pt;text-indent:-18.0pt'><span
+lang=EN-US style='font-family:"游明朝",serif'>4.<span style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+</span></span><span style='font-family:"游明朝",serif'>「<span lang=EN-US>3.</span>」の複数行<span
+lang=EN-US>version (List</span>を用いて行の表現<span lang=EN-US>), </span>なお全ての行でも良いし、任意の範囲の行でも良い。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&lt;</span><span
+style='font-family:"游明朝",serif'>コラム<span lang=EN-US>&gt;</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>私達が今まで使ってきたいつもの構文</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'><img
+border=0 width=471 height=36
+src="Javaプログラミング講座_2018-11-09%20-%20コピー.files/image033.png"
+alt="System.out.println(“Hello world!”);"></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>には実は、<span lang=EN-US>FileIO</span>もとい<span
+lang=EN-US>Stream</span>の概念のようなものが紛れ込んでいる。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>実は、<span lang=EN-US>System.out
+(</span>の<span lang=EN-US>out)</span>は、<span lang=EN-US>OutputStream</span>なのである！</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>つまり<span lang=EN-US>FileIO</span>と本当に似たようなものなのです。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>同様に、<span lang=EN-US>System.in
+</span>というものもあり、これは<span lang=EN-US>InputStream</span>です。</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>しかしながら、これは考えれば自然で、コンソールに文字を書くことって、実際はファイルに文字を書くこととあまり変わりないですよね？そういうことなのです。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&lt;</span><span
+style='font-family:"游明朝",serif'>参考<span lang=EN-US>/Reference&gt;</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>Oracle</span><span
+style='font-family:"游明朝",serif'>の公式解説ページ群<span lang=EN-US>: https://docs.oracle.com/cd/E26537_01/tutorial/essential/io/index.html</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>java.io.File
+</span><span style='font-family:"游明朝",serif'>のコードを<span lang=EN-US>
+java.nio.Path </span>と<span lang=EN-US> java.nio.Files </span>を使って書き直す<span
+lang=EN-US>:</span></span></p>
+
+<p class=MsoNormal style='margin-left:42.0pt;text-indent:42.0pt'><span
+class=MsoHyperlink><span lang=EN-US style='font-family:"游明朝",serif'><a
+href="https://qiita.com/toastkidjp/items/5500521ff5dc0346c2b1">https://qiita.com/toastkidjp/items/5500521ff5dc0346c2b1</a></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>Java</span><span
+style='font-family:"游明朝",serif'>のファイル入出力関係のクラス<span lang=EN-US>/</span>インタフェースについて整理する<span
+lang=EN-US>:</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span
+class=MsoHyperlink><a
+href="https://qiita.com/anqooqie/items/0ac128f52e2e5153f727">https://qiita.com/anqooqie/items/0ac128f52e2e5153f727</a></span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>== </span><span
+style='font-family:"游明朝",serif'>明示的な書き方 <span lang=EN-US>==</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>空白</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>改行</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>インデント</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>処理順</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>== </span><span
+style='font-family:"游明朝",serif'>オブジェクト指向 <span lang=EN-US>==</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・クラス</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・メンバ</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・フィールド</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・メソッド</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・オブジェクト</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>(</span><span
+style='font-family:"游明朝",serif'>・インスタンス<span lang=EN-US>: </span>クラス<span
+lang=EN-US>, </span>オブジェクト<span lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・<span lang=EN-US>static</span>？</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>クラス関係<span lang=EN-US>:</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・継承<span lang=EN-US>([extends])</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; class:</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・クラスの定義の拡張。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・単一継承。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・親クラスのメソッド、フィールドを利用できる。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・親クラスとほぼ同一として扱われる。<span lang=EN-US>(</span>キャスト<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>・実装<span lang=EN-US>(abstract[extends],
+interface[implements])</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; abstract(</span><span
+style='font-family:"游明朝",serif'>抽象<span lang=EN-US>):</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; class</span><span
+style='font-family:"游明朝",serif'>とほぼ同様だが、抽象である。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・クラスのメソッド、フィールドの実装を定義しない。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・<span lang=EN-US>abstract(</span>抽象<span
+lang=EN-US>)</span>クラスは、インスタンス生成できず、</span></p>
+
+<p class=MsoNormal style='margin-left:126.0pt;text-indent:10.5pt'><span
+style='font-family:"游明朝",serif'>継承クラスで実装されなければならない。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; interface(</span><span
+style='font-family:"游明朝",serif'>インターフェース<span lang=EN-US>):</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・機能の宣言。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・クラスのメソッドの実装を定義しない。<span lang=EN-US>(</span>フィールドはできる？<span
+lang=EN-US>)</span></span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+style='font-family:"游明朝",serif'>・多重継承可能。</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>&nbsp;</span></p>
+
+<p class=MsoNormal><span lang=EN-US style='font-family:"游明朝",serif'>++++</span><span
+style='font-family:"游明朝",serif'>最後に参考に<span lang=EN-US>+++++</span></span></p>
+
+<p class=MsoNormal><span style='font-family:"游明朝",serif'>おすすめサイト<span
+lang=EN-US>: <span class=MsoHyperlink><a
+href="https://manga.crocro.com/?cat=java&amp;pg=index">https://manga.crocro.com/?cat=java&amp;pg=index</a></span>
+(</span>漫画でわかりやすくて触りには最高<span lang=EN-US>)</span></span></p>
+
+</div>
+
+</body>
+
+</html>
